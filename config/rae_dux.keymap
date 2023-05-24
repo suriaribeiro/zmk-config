@@ -123,7 +123,7 @@
                    &kp Q        &kp W         &kp E              &kp R              &kp T              &kp Y              &kp U               &kp I                 &kp O         &kp P
                    &lhm LGUI A  &lhm LALT S   &lhm LCTL D       &lhm LSHFT F       &kp G              &kp H              &rhm RSHFT J        &rhm RCTL K          &rhm RALT L   &rhm RGUI SEMICOLON
                    &kp Z        &kp X         &kp C              &kp V              &kp B              &kp N              &kp M               &kp COMMA             &kp PERIOD       &kp SLASH
-				 /*&            &*/           &base_lt NAV_L TAB &base_lt SYM_L SPC &base_lt NUM_L ESC &base_lt NUM_L DEL &base_lt SYM_L BSPC &base_lt NAV_L RET  /*&             &*/
+				 /*&            &*/           &base_lt NAV_L TAB &base_lt SYM_L BSPC &base_lt NUM_L ESC &base_lt NUM_L DEL &base_lt SYM_L SPC &base_lt NAV_L RET  /*&             &*/
 			>;
 		};
 
@@ -138,9 +138,9 @@
 
 		num_layer {
 			bindings = <
-                   &kp UNDER    &kp N6        &kp N5        &kp N4             &kp PLUS           &kp STAR            &kp F4           &kp F5                   &kp F6        &kp F10
-                   &kp DOT      &kp N3        &kp N2        &kp N1             &kp MINUS          &kp LSHFT           &kp F1           &kp F2                   &kp F3        &kp F11
-                   &kp COMMA    &kp N9        &kp N8        &kp N7             &kp EQUAL          &kp COLON           &kp F7           &kp F8                   &kp F9        &kp F12
+                   &kp UNDER    &kp N7        &kp N8        &kp N9             &kp PLUS           &kp STAR            &kp F4           &kp F5                   &kp F6        &kp F10
+                   &kp DOT      &kp N4        &kp N5        &kp N6             &kp MINUS          &kp LSHFT           &kp F1           &kp F2                   &kp F3        &kp F11
+                   &kp COMMA    &kp N1        &kp N2        &kp N3             &kp EQUAL          &kp COLON           &kp F7           &kp F8                   &kp F9        &kp F12
 				 /*&            &*/           &trans        &trans             &kp N0             &kp N0              &trans           &trans                 /*&             &*/
 			>;
 		};
@@ -148,7 +148,7 @@
 		nav_layer {
 			bindings = <
                    &kp MEH(T)   &trans        &trans        &trans             &bt BT_CLR         &bt BT_PRV          &bt BT_NXT       &trans                   &trans        &kp MEH(T)
-                   &sk LALT     &sk LGUI      &sk LSHFT     &sk LCTRL          &trans             &trans              &kp LEFT         &kp DOWN                 &kp UP        &kp RIGHT
+                   &sk LGUI     &sk LALT      &sk LCTL     &sk LSHFT          &trans             &trans              &kp LEFT         &kp DOWN                 &kp UP        &kp RIGHT
                    &trans       &kp CUT       &kp COPY      &kp PASTE          &trans             &trans              &kp HOME         &kp K_PREV               &kp K_NEXT    &kp END
 				 /*&            &*/           &trans        &trans             &trans             &trans              &trans           &trans             /*&             &*/
 			>;
