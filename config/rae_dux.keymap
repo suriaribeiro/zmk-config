@@ -21,6 +21,9 @@
 #define SYM_L   1
 #define NUM_L   2
 #define NAV_L   3
+#define MEDIA_L	  4
+#define MOUSE_L 5
+#define FUN_L 6
 
 #define CUT   LG(X)
 #define COPY  LG(C)
@@ -125,16 +128,16 @@
                    &kp Q        &kp W         &kp E              &kp R              &kp T              &kp Y              &kp U               &kp I                 &kp O         &kp P
                    &lhm LGUI A  &lhm LALT S   &lhm LCTL D       &lhm LSHFT F       &kp G              &kp H              &rhm RSHFT J        &rhm RCTL K          &rhm RALT L   &rhm RGUI SEMICOLON
                    &kp Z        &kp X         &kp C              &kp V              &kp B              &kp N              &kp M               &kp COMMA             &kp PERIOD       &kp SLASH
-				 /*&            &*/           &base_lt NAV_L TAB &base_lt NUM_L ESC &base_lt SYM_L BSPC &base_lt SYM_L SPC &base_lt NUM_L DEL &base_lt NAV_L RET  /*&             &*/
+				 /*&            &*/           &base_lt MEDIA_L ESC &base_lt NAV_L BSPC &base_lt MOUSE_L TAB &base_lt SYM_L RET &base_lt NUM_L SPC &base_lt FUN_L RET  /*&             &*/
 			>;
 		};
 
 		sym_layer {
 			bindings = <
-                   &kp APOS     &kp LT        &kp GT        &kp DQT            &kp AMPS           &scope              &kp DOT          &kp LBRC                 &kp RBRC      &kp PRCNT
-                   &kp EXCL     &kp MINUS     &kp PLUS      &kp EQUAL          &kp PIPE           &kp COLON           &kp HASH         &kp LPAR                 &kp RPAR      &kp AT
-                   &kp CARET    &kp FSLH      &kp STAR      &kp BSLH           &kp TILDE          &lambda             &kp DLLR         &kp LBKT                 &kp RBKT      &kp QMARK
-				 /*&            &*/           &trans        &trans             &trans             &trans              &trans           &trans                 /*&             &*/
+                   &kp LEFT_BRACKET     &kp AMPERSAND        &kp ASTERISK        &kp LEFT_PARENTHESIS            &kp RIGHT_PARENTHESIS           &kp REDO            &kp PASTE           &kp COPY                   &kp CUT        &kp UNDO
+                   &kp COLON     &kp DOLLAR     &kp PERCENT      &kp CARET          &kp PLUS           &kp COLON           &trans         &trans                 &trans      &trans
+                   &kp TILDE    &kp EXCLAMATION      &kp AT_SIGN      &kp HASH           &kp PIPE          &lambda             &kp DLLR         &kp LBKT                 &kp RBKT      &kp QMARK
+				 /*&            &*/           &LEFT_PARENTHESIS        &RIGHT_PARENTHESIS             &UNDERSCORE             &trans              &trans           &trans                 /*&             &*/
 			>;
 		};
 
