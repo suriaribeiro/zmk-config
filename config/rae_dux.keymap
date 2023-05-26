@@ -25,6 +25,8 @@
 #define CUT   LG(X)
 #define COPY  LG(C)
 #define PASTE LG(V)
+#define UNDO LG(Z)
+#define REDO LG(Y)
 
 #define MEH(KEY) LS(LC(LA(LG(KEY))))
 
