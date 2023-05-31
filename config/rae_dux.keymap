@@ -128,7 +128,7 @@
                    &kp Q        &kp W         &kp E              &kp R              &kp T              &kp Y              &kp U               &kp I                 &kp O         &kp P
                    &lhm LGUI A  &lhm LALT S   &lhm LCTL D       &lhm LSHFT F       &kp G              &kp H              &rhm RSHFT J        &rhm RCTL K          &rhm RALT L   &rhm RGUI SEMICOLON
                    &kp Z        &kp X         &kp C              &kp V              &kp B              &kp N              &kp M               &kp COMMA             &kp PERIOD       &kp SLASH
-				 /*&            &*/           &base_lt MEDIA_L ESC &base_lt NAV_L BSPC &base_lt MOUSE_L SPC &base_lt SYM_L SPC &base_lt NUM_L TAB &base_lt FUN_L RET  /*&             &*/
+				 /*&            &*/           &base_lt MEDIA_L ESC &base_lt NAV_L BSPC &base_lt MOUSE_L DEL &base_lt SYM_L RET &base_lt NUM_L SPC &base_lt FUN_L TAB  /*&             &*/
 			>;
 		};
 
