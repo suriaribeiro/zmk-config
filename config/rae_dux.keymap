@@ -62,12 +62,10 @@
         COMBO(caps_word_right, &caps_word, 15 16, 60)	
 	COMBO(enter, &kp SPC, 34 35, 60)
 	COMBO(enter, &kp SPC, 30 31, 60)
-
         COMBO(grave, &kp GRAVE, 1 2, 60)
         COMBO(colon, &kp COLON, 7 8, 60)
         COMBO(equal, &kp EQUAL, 21 22, 60)
         COMBO(semicolon, &kp SEMI, 27 28, 60)
-
         COMBO(minus, &kp MINUS, 31 34, 60)
         COMBO(underscore, &kp UNDER, 32 33, 60)
     };
