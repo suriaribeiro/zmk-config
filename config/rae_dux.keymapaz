@@ -58,8 +58,7 @@
           ╰───────╮ 30  31  32 │ │ 33  34  35 ╭───────╯
                   ╰────────────╯ ╰────────────╯        */
 
-        COMBO(caps_word_left, &caps_word, 13 14, 60)
-        COMBO(caps_word_right, &caps_word, 15 16, 60)	
+        COMBO(caps_word, &caps_word, 13 14, 60)
 	COMBO(enter, &kp SPC, 30 31, 60)
         COMBO(grave, &kp GRAVE, 1 2, 60)
         COMBO(colon, &kp COLON, 7 8, 60)
@@ -67,6 +66,7 @@
         COMBO(semicolon, &kp SEMI, 27 28, 60)
         COMBO(minus, &kp MINUS, 31 34, 60)
         COMBO(underscore, &kp UNDER, 32 33, 60)
+	COMBO(esc, &kp ESC, 0 10, 60)
     };
 
     behaviors {
@@ -124,7 +124,7 @@
 
 		base_layer {
 			bindings = <
-                   &lhm ESC A        &kp W         &kp E              &kp R              &kp T              &kp Y              &kp U               &kp I                 &kp O         &kp P
+                   &lhm A        &kp W         &kp E              &kp R              &kp T              &kp Y              &kp U               &kp I                 &kp O         &kp P
                    &lhm LGUI A  &lhm LALT S   &lhm LCTL D       &lhm LSHFT F       &kp G              &kp H              &rhm RSHFT J        &rhm RCTL K          &rhm RALT L   &rhm RGUI SEMICOLON
                    &kp Z        &kp X         &kp C              &kp V              &kp B              &kp N              &kp M               &kp COMMA             &kp PERIOD       &kp SLASH
 				 /*&            &*/           &base_lt MEDIA_L TAB &base_lt NAV_L BSPC &base_lt MOUSE_L DEL &base_lt SYM_L F4 &base_lt NUM_L SPC &base_lt FUN_L RET  /*&             &*/
