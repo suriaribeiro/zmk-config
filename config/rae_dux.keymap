@@ -65,7 +65,7 @@
         COMBO(equal, &kp EQUAL, 21 22, 60)
         COMBO(semicolon, &kp SEMI, 27 28, 60)
         COMBO(minus, &kp MINUS, 31 34, 60)
-        COMBO(esc, &kp ESC, 0 1, 60)
+        COMBO(esc, &kp ESC, 23 24, 60)
     };
 
     behaviors {
@@ -123,7 +123,7 @@
 
 		base_layer {
 			bindings = <
-                   &lhm ESC A        &kp W         &kp E              &kp R              &kp T              &kp Y              &kp U               &kp I                 &kp O         &kp P
+                   &kp Q        &kp W         &kp E              &kp R              &kp T              &kp Y              &kp U               &kp I                 &kp O         &kp P
                    &lhm LGUI A  &lhm LALT S   &lhm LCTL D       &lhm LSHFT F       &kp G              &kp H              &rhm RSHFT J        &rhm RCTL K          &rhm RALT L   &rhm RGUI SEMICOLON
                    &kp Z        &kp X         &kp C              &kp V              &kp B              &kp N              &kp M               &kp COMMA             &kp PERIOD       &kp SLASH
 				 /*&            &*/           &base_lt MEDIA_L TAB &base_lt NAV_L BSPC &base_lt MOUSE_L DEL &base_lt SYM_L F4 &base_lt NUM_L SPC &base_lt FUN_L RET  /*&             &*/
