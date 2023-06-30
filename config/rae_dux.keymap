@@ -31,8 +31,6 @@
 #define UNDO LG(Z)
 #define REDO LG(Y)
 
-#define MEH(KEY) LS(LC(LA(LG(KEY))))
-
 / {
     macros {
         ZMK_MACRO(scope, wait-ms = <30>; tap-ms = <30>; bindings = <&kp COLON &kp COLON>;)
@@ -58,8 +56,8 @@
           ╰───────╮ 30  31  32 │ │ 33  34  35 ╭───────╯
                   ╰────────────╯ ╰────────────╯        */
 
-        COMBO(caps_word, &caps_word, 13 14, 60)
-        COMBO(enter, &kp SPC, 30 31, 60)
+        COMBO(caps_word, &caps_word, 4 5, 60)
+        COMBO(space, &kp SPC, 30 31, 60)
         COMBO(grave, &kp GRAVE, 1 2, 60)
         COMBO(colon, &kp COLON, 7 8, 60)
         COMBO(equal, &kp EQUAL, 21 22, 60)
@@ -80,6 +78,14 @@
             bindings = <&kp>, <&kp>;
             // hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 30 31 32 33 34 35>;
             hold-trigger-key-positions = <5 6 7 8 9 10 11 12 13 15 16 17 18 19 25 26 27 28 29 30 31 32 33 34 35>;
+        };
+
+        td0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_0";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp N1>, <&kp N2>, <&kp N3>;
         };
 
         rhm: right_hand_positional_hold_tap {
