@@ -85,7 +85,7 @@
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp N1>, <&kp N2>, <&kp N3>;
+            bindings = <&tog NUM_L>, <&tog NAV_L>, <&tog SYM_L>;
         };
 
         rhm: right_hand_positional_hold_tap {
