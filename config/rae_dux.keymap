@@ -85,7 +85,7 @@
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&tog NUM_L>, <&tog SYM_L>;
+            bindings = <&tog NUM_L>, <&tog SYM_L>, <&kp F4>;
         };
 
         rhm: right_hand_positional_hold_tap {
@@ -138,7 +138,7 @@
 
 		sym_layer {
 			bindings = <
-                &kp SINGLE_QUOTE	&kp AMPERSAND    	&kp ASTERISK		&kp LEFT_PARENTHESIS  		&kp RIGHT_PARENTHESIS    &kp REDO	&kp PASTE      &kp COPY		&kp CUT        	&kp UNDO
+                &kp ASTERISK	&kp AMPERSAND    	&kp SINGLE_QUOTE		&kp LEFT_PARENTHESIS  		&kp RIGHT_PARENTHESIS    &kp REDO	&kp PASTE      &kp COPY		&kp CUT        	&kp UNDO
 		&kp COLON		&kp DOLLAR  	 	&kp PERCENT   		&kp CARET         		&kp EQUAL 	         &trans		&trans         &kp UP          	&trans    	&trans
                 &kp TILDE  		&kp EXCLAMATION 	&kp AT_SIGN   		&kp HASH           		&kp PIPE        	 &trans    	&kp LEFT         &kp DOWN		&kp RIGHT      	&trans
 		/*&         		&*/			&trans    &trans           &trans           &trans         &trans         &trans           /*&             &*/
