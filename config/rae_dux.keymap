@@ -129,10 +129,10 @@
 
 		base_layer {
 			bindings = <
-                   &kp Q        &kp W         &kp E              &kp R              &kp T              &kp Y              &kp U               &kp I                 &kp O         &kp P
-                   &lhm LGUI A  &lhm LALT S   &lhm LCTL D       &lhm LSHFT F       &kp G              &kp H              &rhm RSHFT J        &rhm RCTL K          &rhm RALT L   &rhm RGUI SEMICOLON
+                   &kp Q        &kp W         &kp E              &kp R              &kp T              &kp Y              &kp U               &kp I                 &kp O            &kp P
+                   &lhm LGUI A  &lhm LALT S   &lhm LCTL D       &lhm LSHFT F        &kp G              &kp H              &rhm RSHFT J        &rhm RCTL K           &rhm RALT L      &rhm RGUI SEMICOLON
                    &kp Z        &kp X         &kp C              &kp V              &kp B              &kp N              &kp M               &kp COMMA             &kp PERIOD       &kp SLASH
-				 /*&            &*/           &td0 &base_lt NAV_L SPC &lhm F4 TAB &base_lt FUN_L RET &base_lt NUM_L SPC &base_lt SYM_L BSPC /*&             &*/
+	           /*&          &*/           &td0               &base_lt NAV_L SPC &kp TAB           &kp RET             &base_lt NUM_L SPC  &base_lt SYM_L BSPC   /*&              &*/
 			>;
 		};
 
