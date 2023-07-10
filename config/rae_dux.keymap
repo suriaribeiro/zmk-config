@@ -61,7 +61,6 @@
 	COMBO(esc, &kp ESC, 22 23, 60)
         COMBO(semicolon, &kp SEMI, 27 28, 60)
         COMBO(minus, &kp MINUS, 31 34, 60)
-        
  	
     };
 
@@ -131,7 +130,7 @@
                    &kp Q        &kp W         &kp E              &kp R              &kp T              &kp Y              &kp U               &kp I                 &kp O         &kp P
                    &lhm LCTL A  &lhm LALT S   &lhm LGUI D       &lhm LSHFT F       &kp G              &kp H              &rhm RSHFT J        &rhm RGUI K          &rhm RALT L   &rhm RCTL SEMICOLON
                    &kp Z        &kp X         &kp C              &kp V              &kp B              &kp N              &kp M               &kp COMMA             &kp PERIOD       &kp SLASH
-				 /*&            &*/           &td0 &base_lt NAV_L SPC &lhm F4 TAB &base_lt FUN_L RET &base_lt NUM_L BSPC &base_lt SYM_L DEL /*&             &*/
+				 /*&            &*/           &td0 &base_lt NAV_L SPC &lhm F4 TAB &kp RET &base_lt NUM_L BSPC &base_lt SYM_L DEL /*&             &*/
 			>;
 		};
 
