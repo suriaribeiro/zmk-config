@@ -1,6 +1,9 @@
-on: [push, pull_request, workflow_dispatch]
-
 name: Build
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
 
 jobs:
   matrix:
@@ -19,6 +22,7 @@ jobs:
           matrix=$(yaml2json build.yaml | jq -c .)
           yaml2json build.yaml
           echo "::set-output name=matrix::${matrix}"
+          
   build:
     runs-on: ubuntu-latest
     container:
@@ -27,7 +31,7 @@ jobs:
     name: Build
     strategy:
       fail-fast: false
-      matrix: ${{fromJson(needs.matrix.outputs.matrix)}}
+      matrix: ${{ fromJson(needs.matrix.outputs.matrix) }}
     steps:
       - name: Prepare variables
         id: variables
@@ -41,11 +45,13 @@ jobs:
             DISPLAY_NAME="${{ matrix.board }}"
             ARTIFACT_NAME="${{ matrix.board }}-zmk"
           fi
-          echo ::set-output name=extra-cmake-args::${EXTRA_CMAKE_ARGS}
-          echo ::set-output name=artifact-name::${ARTIFACT_NAME}
-          echo ::set-output name=display-name::${DISPLAY_NAME}
+          echo "extra-cmake-args=${EXTRA_CMAKE_ARGS}" >> $GITHUB_ENV
+          echo "artifact-name=${ARTIFACT_NAME}" >> $GITHUB_ENV
+          echo "display-name=${DISPLAY_NAME}" >> $GITHUB_ENV
+          
       - name: Checkout
         uses: actions/checkout@v2
+        
       - name: Cache west modules
         uses: actions/cache@v2
         env:
@@ -62,27 +68,32 @@ jobs:
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
             ${{ runner.os }}-
+            
       - name: West Init
         run: west init -l config
+        
       - name: West Update
         run: west update
+        
       - name: West Zephyr export
         run: west zephyr-export
+        
       - name: West Build (${{ steps.variables.outputs.display-name }})
         run: |
           west build -s zmk/app -b ${{ matrix.board }} -- -DZMK_CONFIG=${GITHUB_WORKSPACE}/config ${{ steps.variables.outputs.extra-cmake-args }} ${{ matrix.cmake-args }}
+          
       - name: ${{ steps.variables.outputs.display-name }} Kconfig file
         run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
+        
       - name: Rename artifacts
         run: |
           mkdir build/artifacts
-          if [ -f build/zephyr/zmk.uf2 ]
-          then
+          if [ -f build/zephyr/zmk.uf2 ]; then
             cp build/zephyr/zmk.uf2 "build/artifacts/${{ steps.variables.outputs.artifact-name }}.uf2"
-          elif [ -f build/zephyr/zmk.hex ]
-          then
+          elif [ -f build/zephyr/zmk.hex ]; then
             cp build/zephyr/zmk.hex "build/artifacts/${{ steps.variables.outputs.artifact-name }}.hex"
           fi
+          
       - name: Archive (${{ steps.variables.outputs.display-name }})
         uses: actions/upload-artifact@v2
         with:
