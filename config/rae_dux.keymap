@@ -101,7 +101,7 @@
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 16 17 18 19 20 21 22 23 24 30 31 32 33 34 35>;
         };
 
-        base_lt: base_layer_hold_tap {
+        blt: base_layer_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "BASE_LAYER_HOLD_TAP";
             #binding-cells = <2>;
@@ -128,38 +128,38 @@
 		compatible = "zmk,keymap";
 
 		base_layer {
-			bindings = <
-                   &kp Q        &kp W         &kp E              &kp R              &kp T              &kp Y              &kp U               &kp I                 &kp O         &kp P
-                   &lhm LCTL A  &lhm LALT S   &lhm LGUI D       &lhm LSHFT F       &kp G              &kp H              &rhm RSHFT J        &rhm RGUI K          &rhm RALT L   &rhm RCTL SEMICOLON
-                   &kp Z        &kp X         &kp C              &kp V              &kp B              &kp N              &kp M               &kp COMMA             &kp PERIOD       &kp SLASH
-				 /*&            &*/           &td0 &lhm F4 TAB &base_lt NAV_L SPC &kp BSPC &base_lt NUM_L RET &base_lt SYM_L DEL /*&             &*/
+			bindings = < 
+                &kp Q        	&kp W         &kp E          &kp R          &kp T          		&kp Y            &kp U             &kp I             kp O           &kp P
+                &lhm LCTL A  	&lhm LALT S   &lhm LGUI D    &lhm LSHFT F   &kp G          		&kp H            &rhm RSHFT J      &rhm RGUI K       &rhm RALT L    &rhm RCTL SEMI
+                &kp Z        	&kp X         &kp C          &kp V          &kp B          		&kp N            &kp M             &kp COMMA         &kp PERIOD     &kp SLASH
+		/*&          	&*/           &td0	     &lhm F4 TAB    &blt  SPC 			&blt NUM_L SPC   &blt SYM_L BSPC   &blt SYM_L RET    /*&            &*/
 			>;
 		};
 
 		sym_layer {
 			bindings = <
-                &kp ASTERISK	&kp AMPERSAND    	&kp SINGLE_QUOTE		&kp LEFT_BRACKET  		&kp RIGHT_BRACKET    &kp REDO	&kp PASTE      &kp COPY		&kp CUT        	&kp UNDO
-		&kp COLON		&kp DOLLAR  	 	&kp PERCENT   		&kp CARET         		&kp EQUAL 	         &trans		&trans         &trans          	&trans    	&trans
-                &kp TILDE  		&kp EXCLAMATION 	&kp AT_SIGN   		&kp HASH           		&kp PIPE        	 &trans    	&trans         &trans		&trans      	&trans
-		/*&         		&*/			&to 0    &trans           &trans           &trans         &trans         &trans           /*&             &*/
+                &kp ASTERISK	&kp AMPS    &kp SQT	     &kp LBRC  	     &kp RBRC       		&kp REDO	&kp PASTE          &kp COPY  	 	&kp CUT        	&kp UNDO
+		&kp COLON	&kp DOLLAR  &kp PRCNT        &kp CARET       &kp EQUAL       		&trans		&trans             &trans          	&trans    	&trans
+                &kp TILDE  	&kp EXCL    &kp AT_SIGN      &kp HASH        &kp PIPE        		&trans 		&trans             &trans		&trans      	&trans
+		/*&         	&*/	    &to 0    	     &trans          &trans         		&trans          &trans             &trans               /*&             &*/
 			>;
 		};
 
 		num_layer {
 			bindings = <
-                   &kp LEFT_PARENTHESIS    &kp N7        &kp N8        &kp N9             &kp EQUAL           &kp REDO            &kp PASTE           &kp COPY                   &kp CUT        &kp UNDO
-                   &kp RIGHT_PARENTHESIS      &kp N4        &kp N5        &kp N6             &kp APOSTROPHE          &trans            &sk RSHFT           &sk RCTL                   &sk RALT        &sk RGUI
-                   &kp GRAVE    &kp N1        &kp N2        &kp N3             &kp BACKSLASH          &trans            &trans            &trans                    &trans         &trans 
-				 /*&            &*/           &to 0        &kp N0             &trans            &trans                &trans           &trans                 /*&             &*/
+                &kp LPAR   &kp N7     &kp N8        &kp N9             &kp EQUAL           &kp REDO          &kp PASTE        &kp COPY     &kp CUT        &kp UNDO
+                &kp RPAR   &kp N4     &kp N5        &kp N6             &kp APOSTROPHE      &trans            &sk RSHFT        &sk RCTL     &sk RALT        &sk RGUI
+                &kp GRAVE  &kp N1     &kp N2        &kp N3             &kp BACKSLASH       &trans            &trans           &trans       &trans         &trans 
+		/*&           		&*/        &to 0         &kp N0             &trans              &trans            &trans           &trans       /*&             &*/
 			>;
 		};
 
 		nav_layer {
 			bindings = <
-                   &kp UNDO   &kp CUT      &kp COPY          &kp PASTE             &kp REDO      &bt BT_SEL 0          &bt BT_SEL 1       &bt BT_SEL 3                   &bt BT_SEL 4        &bt BT_CLR
-                   &sk LGUI     &sk LALT      &sk LCTL     &sk LSHFT          &trans             &trans              &kp LEFT         &kp DOWN                 &kp UP        &kp RIGHT
-                   &trans       &kp CUT       &kp COPY      &kp PASTE          &trans             &trans              &kp HOME         &kp K_PREV               &kp K_NEXT    &kp END
-				 /*&            &*/           &trans        &trans             &trans             &trans              &trans           &trans             /*&             &*/
+         	&kp UNDO   &kp CUT      &kp COPY     &kp PASTE             &kp REDO      &bt BT_SEL 0          &bt BT_SEL 1     &bt BT_SEL 3       &bt BT_SEL 4  &bt BT_CLR
+                &sk LGUI   &sk LALT     &sk LCTL     &sk LSHFT          &trans             &trans              &kp LEFT         &kp DOWN           &kp UP        &kp RIGHT
+                &trans     &kp CUT      &kp COPY     &kp PASTE          &trans             &trans              &kp HOME         &kp K_PREV         &kp K_NEXT    &kp END
+		/*&        &*/          &trans       &trans             &trans             &trans              &trans           &trans             /*&           &*/
 			>;
 		};
 	};
