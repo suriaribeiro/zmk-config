@@ -62,7 +62,7 @@
 	COMBO(BACKSLASH, &kp BACKSLASH, 26 27, 60)
 	COMBO(RIGHT_PARENTHESIS, &kp RIGHT_PARENTHESIS, 7 8, 60) 
 	COMBO(RIGHT_BRACKET, &kp RIGHT_BRACKET, 27 28, 60)
-        COMBO(MINUS, &kp MINUS, 32 33, 60)
+        COMBO(MINUS, &kp MINUS, 31 34 , 60)
  	
     };
 
@@ -132,7 +132,7 @@
                 &kp Q        &kp W         &kp E             &kp R              &kp T              &kp Y              &kp U               &kp I                 &kp O            &kp P
                 &lhm LCTL A  &lhm LALT S   &lhm LGUI D       &lhm LSHFT F       &kp G              &kp H              &rhm RSHFT J        &rhm RGUI K           &rhm RALT L      &rhm RCTL SEMICOLON
                 &kp Z        &kp X         &kp C             &kp V              &kp B              &kp N              &kp M               &kp COMMA             &kp PERIOD       &kp SLASH
-		/*&          &*/           &td0 	        &lhm F4 TAB 	   &blt NAV_L SPC     &blt NUM_L SPC 	 &kp BSPC     	     &blt SYM_L RET 	   /*&              &*/
+		/*&          &*/           &td0 	     &blt NAV_L SPC    &lhm F4 TAB     	   &kp BSPC   	      &blt NUM_L SPC 	  &blt SYM_L RET 	   /*&              &*/
 			>;
 		};
 
@@ -150,7 +150,7 @@
                 &kp LPAR    &kp N7        &kp N8        &kp N9             &kp EQUAL           &kp REDO            &kp PASTE           &kp COPY                   &kp CUT        &kp UNDO
                 &kp RPAR      &kp N4        &kp N5        &kp N6             &kp APOS          &trans            &sk RSHFT           &sk RCTL                   &sk RALT        &sk RGUI
                 &kp GRAVE    &kp N1        &kp N2        &kp N3             &kp BSLH          &trans            &trans            &trans                    &trans         &trans 
-		/*&            &*/           &to 0        &kp N0             &trans            &trans                &trans           &trans                 /*&             &*/
+		/*&            &*/           &to 0       &trans             &kp N0          &trans                &trans           &trans                 /*&             &*/
 			>;
 		};
 
