@@ -154,7 +154,7 @@
 			>;
 		};
 
-		nav_layer {   Option + Cmd + Shift + V 
+		nav_layer {
 			bindings = <
                 &kp LG(Z)   &kp LG(X)      &kp LG(C)          &kp RA(LG(LS(V)))      &kp LG(Y)      &bt BT_SEL 0          &bt BT_SEL 1       &bt BT_SEL 3                   &bt BT_SEL 4        &bt BT_CLR
                 &sk LGUI     &sk LALT      &sk LCTL     &sk LSHFT          &trans             &trans              &kp LEFT         &kp DOWN                 &kp UP        &kp RIGHT
