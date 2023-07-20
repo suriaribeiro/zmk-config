@@ -154,9 +154,9 @@
 			>;
 		};
 
-		nav_layer {
+		nav_layer {   Option + Cmd + Shift + V 
 			bindings = <
-                &kp C_AC_UNDO   &kp C_AC_CUT      &kp C_AC_COPY          &kp C_AC_PASTE             &kp C_AC_REDO      &bt BT_SEL 0          &bt BT_SEL 1       &bt BT_SEL 3                   &bt BT_SEL 4        &bt BT_CLR
+                &kp LG(Z)   &kp LG(X)      &kp LG(C)          &kp RA(LG(LS(V)))      &kp LG(Y)      &bt BT_SEL 0          &bt BT_SEL 1       &bt BT_SEL 3                   &bt BT_SEL 4        &bt BT_CLR
                 &sk LGUI     &sk LALT      &sk LCTL     &sk LSHFT          &trans             &trans              &kp LEFT         &kp DOWN                 &kp UP        &kp RIGHT
                 &none       &none       &none      &none          &none             &trans              &kp HOME         &kp K_PREV               &kp K_NEXT    &kp END
 		/*&            &*/           &trans        &trans             &trans             &trans              &trans           &trans             /*&             &*/
