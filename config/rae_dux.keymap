@@ -132,7 +132,7 @@
                 &kp Q        &kp W         &kp E             &kp R              &kp T              &kp Y              &kp U               &kp I                 &kp O            &kp P
                 &lhm LCTL A  &lhm LALT S   &lhm LGUI D       &lhm LSHFT F       &kp G              &kp H              &rhm RSHFT J        &rhm RGUI K           &rhm RALT L      &rhm RCTL SEMICOLON
                 &kp Z        &kp X         &kp C             &kp V              &kp B              &kp N              &kp M               &kp COMMA             &kp PERIOD       &kp SLASH
-		/*&          &*/           &td0 	     &blt NAV_L SPC    &lhm F4 TAB     	   &kp BSPC   	      &blt NUM_L SPC 	  &blt SYM_L RET 	   /*&              &*/
+		/*&          &*/           &td0 	     &blt NAV_L SPC    &lhm F4 TAB     	   &kp RET   	      &blt NUM_L BSPC 	  &blt SYM_L DEL 	   /*&              &*/
 			>;
 		};
 
@@ -150,15 +150,15 @@
                 &kp LPAR    &kp N7        &kp N8        &kp N9             &kp EQUAL           &kp REDO            &kp PASTE           &kp COPY                   &kp CUT        &kp UNDO
                 &kp RPAR      &kp N4        &kp N5        &kp N6             &kp APOS          &trans            &sk RSHFT           &sk RCTL                   &sk RALT        &sk RGUI
                 &kp GRAVE    &kp N1        &kp N2        &kp N3             &kp BSLH          &trans            &trans            &trans                    &trans         &trans 
-		/*&            &*/           &to 0       &trans             &kp N0          &trans                &trans           &trans                 /*&             &*/
+		/*&            &*/           &to 0       &kp N0             &trans          &trans                &trans           &trans                 /*&             &*/
 			>;
 		};
 
 		nav_layer {
 			bindings = <
-                &kp UNDO   &kp CUT      &kp COPY          &kp PASTE             &kp REDO      &bt BT_SEL 0          &bt BT_SEL 1       &bt BT_SEL 3                   &bt BT_SEL 4        &bt BT_CLR
+                &kp C_AC_UNDO   &kp C_AC_CUT      &kp C_AC_COPY          &kp C_AC_PASTE             &kp C_AC_REDO      &bt BT_SEL 0          &bt BT_SEL 1       &bt BT_SEL 3                   &bt BT_SEL 4        &bt BT_CLR
                 &sk LGUI     &sk LALT      &sk LCTL     &sk LSHFT          &trans             &trans              &kp LEFT         &kp DOWN                 &kp UP        &kp RIGHT
-                &trans       &kp CUT       &kp COPY      &kp PASTE          &trans             &trans              &kp HOME         &kp K_PREV               &kp K_NEXT    &kp END
+                &none       &none       &none      &none          &none             &trans              &kp HOME         &kp K_PREV               &kp K_NEXT    &kp END
 		/*&            &*/           &trans        &trans             &trans             &trans              &trans           &trans             /*&             &*/
 			>;
 		};
