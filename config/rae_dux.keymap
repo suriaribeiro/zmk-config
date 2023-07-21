@@ -139,27 +139,27 @@
 		sym_layer {
 			bindings = <
                 &kp STAR	&kp AMPS    	&kp SQT		&kp LBKT  	&kp RBKT    &kp REDO	&kp PASTE      &kp COPY		&kp CUT        	&kp UNDO
-		&kp COLON	&kp DLLR  	&kp PERCENT   	&kp CARET       &kp EQUAL   &trans	&trans         &trans          	&trans    	&trans
-                &kp TILDE  	&kp EXCL 	&kp AT_SIGN   	&kp HASH        &kp PIPE    &trans    	&trans         &trans		&trans      	&trans
+		&kp COLON	&kp DLLR  	&kp PERCENT   	&kp CARET       &kp EQUAL   &none	&none          &none          	&none    	&none
+                &kp TILDE  	&kp EXCL 	&kp AT_SIGN   	&kp HASH        &kp PIPE    &none    	&none          &none		&none      	&none
 		/*&         	&*/		&to 0     	&trans          &trans      &trans      &trans         &trans           /*&             &*/
 			>;
 		};
 
 		num_layer {
 			bindings = <
-                &kp LPAR    &kp N7        &kp N8        &kp N9             &kp EQUAL           &kp REDO            &kp PASTE           &kp COPY                   &kp CUT        &kp UNDO
-                &kp RPAR      &kp N4        &kp N5        &kp N6             &kp APOS          &trans            &sk RSHFT           &sk RCTL                   &sk RALT        &sk RGUI
-                &kp GRAVE    &kp N1        &kp N2        &kp N3             &kp BSLH          &trans            &trans            &trans                    &trans         &trans 
-		/*&            &*/           &to 0       &kp N0             &trans          &trans                &trans           &trans                 /*&             &*/
+                &kp LPAR      &kp N7        &kp N8        &kp N9             &kp EQUAL         &kp REDO         &kp PASTE       &kp COPY          &kp CUT       &kp UNDO
+                &kp RPAR      &kp N4        &kp N5        &kp N6             &kp APOS          &none            &sk RSHFT       &sk RCTL          &sk RALT      &sk RGUI
+                &kp GRAVE     &kp N1        &kp N2        &kp N3             &kp BSLH          &none            &none           &none             &none         &none 
+		/*&            &*/          &to 0         &kp N0             &trans            &trans            &trans           &trans               /*&             &*/
 			>;
 		};
 
 		nav_layer {
 			bindings = <
-                &kp LG(Z)   &kp LG(X)  &kp LG(C)  	&kp LG(V)      &kp LG(Y)      &bt BT_SEL 0          &bt BT_SEL 1       &bt BT_SEL 3                   &bt BT_SEL 4        &bt BT_CLR
-                &sk LGUI    &sk LALT   &sk LCTL   	&sk LSHFT      &trans           &trans              &kp LEFT         &kp DOWN                 &kp UP        &kp RIGHT
-                &none       &none      &kp LG(LS(5))    &kp RA(LG(LS(V)))          &none             &trans              &kp HOME         &kp K_PREV               &kp K_NEXT    &kp END
-		/*&            &*/           &trans        &trans             &trans             &trans              &trans           &trans             /*&             &*/
+                &kp LG(Z)   &kp LG(X)  &kp LG(C)  	&kp LG(V)          &kp LG(Y)      &bt BT_SEL 0        &bt BT_SEL 1     &bt BT_SEL 3             &bt BT_SEL 4        &bt BT_CLR
+                &sk LGUI    &sk LALT   &sk LCTL   	&sk LSHFT          &none          &none               &kp LEFT         &kp DOWN                 &kp UP              &kp RIGHT
+                &none       &none      &kp LG(LS(5))    &kp RA(LG(LS(V)))  &none          &none               &kp HOME         &kp K_PREV               &kp K_NEXT          &kp END
+		/*&         &*/        &trans           &trans             &trans         &trans              &trans           &trans                   /*&                 &*/
 			>;
 		};
 	};
