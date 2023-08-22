@@ -138,8 +138,8 @@
 
 		sym_layer {
 			bindings = <
-                &kp STAR	&kp AMPS    	&kp SQT		&kp LBKT  	&kp RBKT    &kp REDO	&kp PASTE      &kp COPY		&kp CUT        	&kp UNDO
-		&kp COLON	&kp DLLR  	&kp PERCENT   	&kp CARET       &kp EQUAL   &none	&none          &none          	&none    	&none
+                &none     	&kp AMPS    	&kp STAR	&kp LPAR  	&kp RPAR    &kp REDO	&kp PASTE      &kp COPY		&kp CUT        	&kp UNDO
+		&kp COLON	&kp DLLR  	&kp PERCENT   	&kp CARET       &none       &none	&none          &none          	&none    	&none
                 &kp TILDE  	&kp EXCL 	&kp AT_SIGN   	&kp HASH        &kp PIPE    &none    	&none          &none		&none      	&none
 		/*&         	&*/		&to 0     	&trans          &trans      &trans      &trans         &trans           /*&             &*/
 			>;
